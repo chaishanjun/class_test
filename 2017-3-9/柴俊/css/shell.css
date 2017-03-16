@@ -9,6 +9,8 @@ a {
   text-decoration: none;
 }
 
+/* head  start*/
+
 header {
   width: 16rem;
   height: 2.35rem;
@@ -24,7 +26,7 @@ header {
 header .menu {
   width: 1.45rem;
   height: 1.2rem;
-  background: url(../img/menu.jpg) no-repeat;
+  background: url(../img/menu.png) no-repeat;
   background-size: 1.45rem 1.2rem;
   text-indent: -24.975rem;
 }
@@ -37,9 +39,15 @@ header .logo {
 header .tv {
   width: 1.45rem;
   height: 1.15rem;
-  background: url(../img/tv.jpg) no-repeat;
+  background: url(../img/tv.png) no-repeat;
   background-size: 1.45rem 1.15rem;
   text-indent: -249.975rem;
+}
+
+/* head  end*/
+
+section {
+  /*  Sign in start*/
 }
 
 section .nav {
@@ -55,7 +63,7 @@ section .nav .sign {
   width: 8rem;
   height: 100%;
   font-size: 0.725rem;
-  background: url(../img/sign.jpg) no-repeat 1.425rem 0.45rem;
+  background: url(../img/sign.png) no-repeat 1.425rem 0.45rem;
   background-size: 1.475rem 1.45rem;
   line-height: 2.1rem;
   padding-left: 3.45rem;
@@ -67,6 +75,7 @@ section .nav span {
   border-right: 0.05rem solid #fafafa;
   box-sizing: border-box;
   height: 1.45rem;
+  text-indent: -999rem;
 }
 
 section .nav .reg {
@@ -75,23 +84,58 @@ section .nav .reg {
   font-size: 0.725rem;
   line-height: 2.1rem;
   padding-left: 3.375rem;
-  background: url(../img/reg.jpg) no-repeat 1.35rem 0.45rem;
+  background: url(../img/reg.png) no-repeat 1.35rem 0.45rem;
   background-size: 1.475rem 1.45rem;
   box-sizing: border-box;
 }
 
-.ban {
-  display: flex;
+/*  Sign in end*/
+
+/* roll start*/
+
+.slider-box {
   width: 16rem;
-  height: 7.825rem;
+  height: 7.775rem;
+  background: red;
+  overflow: hidden;
 }
 
-.ban a {
+.slider-box li {
   width: 16rem;
-  height: 7.825rem;
-  background: url(../img/ban.jpg) no-repeat;
-  background-size: 16rem 7.825rem;
+  height: 7.775rem;
+  float: left;
+  position: relative;
 }
+
+.slider-box li img {
+  display: block;
+  width: 100%;
+}
+
+.slider-box li .slider-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.slider-box li .slider-title a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* roll end*/
+
+/* list start */
 
 .from ul {
   display: flex;
@@ -113,9 +157,22 @@ section .nav .reg {
   padding-left: 0.325rem;
 }
 
+.from ul li a {
+  width: 100%;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
 .from ul #nothing {
   border-bottom: none;
 }
+
+/* list end */
+
+/* tab start */
 
 .ask {
   display: flex;
@@ -134,7 +191,7 @@ section .nav .reg {
 .ask a {
   width: 1.5rem;
   height: 1.45rem;
-  background: url(../img/asq.jpg) no-repeat;
+  background: url(../img/asq.png) no-repeat;
   background-size: 1.5rem 1.45rem;
   text-indent: -9999rem;
 }
@@ -149,18 +206,29 @@ section .nav .reg {
   height: 2.1rem;
   display: flex;
   justify-conntent: flex-start;
-  align-items: center;
+  border-bottom: 0.05rem solid #ccc;
+  box-sizing: border-box;
 }
 
 .tny ul li {
+  height: 100%;
+  line-height: 2.1rem;
   padding: 0 0.85rem;
   box-sizing: border-box;
   font-size: 0.725rem;
 }
 
-.tny ul li:hover {
-  border-bottom: 0.1rem solid #9c4f55;
-  box-sizing: border-box;
+.tny ul li a {
+  width: 100%;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.tny ul .on {
+  border-bottom: 0.1rem solid red;
 }
 
 .science ul {
@@ -178,6 +246,15 @@ section .nav .reg {
   border-bottom: 0.05rem solid #ccc;
   font-size: 0.725rem;
   border-bottom: 0.05rem solid #c6c9d0;
+}
+
+.science ul li a {
+  width: 100%;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 .science ul .top {
@@ -209,30 +286,26 @@ section .nav .reg {
   box-sizing: border-box;
 }
 
+/* tab end */
+
+/* back to the top  start */
+
 .return {
   display: flex;
   width: 16rem;
-  height: 2.225rem;
-  background: #fafafa;
+  height: 3.1rem;
+  background: url(../img/jiantou.png) no-repeat 5.45rem 0.9rem #fafafa;
+  background-size: 1.425rem 1.475rem;
   align-items: center;
-  justify-content: center;
   border-top: 0.05rem solid #c6c9d0;
   border-bottom: 0.1rem solid #50cdab;
 }
 
-.return span {
-  width: 1.425rem;
-  height: 1.475rem;
-}
-
-.return span img {
-  width: 1.425rem;
-  height: 1.475rem;
-}
-
 .return p {
-  margin-left: 0.5rem;
+  margin-left: 7.425rem;
 }
+
+/* foot start */
 
 footer {
   width: 16rem;
@@ -249,7 +322,7 @@ footer .sign {
   width: 7.6rem;
   height: 1.95rem;
   line-height: 1.95rem;
-  background: url(../img/pc.jpg) no-repeat 1.65rem 0.45rem;
+  background: url(../img/pc.png) no-repeat 1.65rem 0.45rem;
   background-size: 1.45rem 1.175rem;
   font-size: 0.725rem;
   padding-left: 3.7rem;
@@ -260,7 +333,7 @@ footer .reg {
   width: 7.55rem;
   height: 1.95rem;
   line-height: 1.95rem;
-  background: url(../img/shouji.jpg) no-repeat 1.75rem 0.45rem;
+  background: url(../img/shouji.png) no-repeat 1.75rem 0.45rem;
   background-size: 0.675rem 1.175rem;
   font-size: 0.725rem;
   padding-left: 3rem;
@@ -272,3 +345,5 @@ footer span {
   border-left: 0.05rem solid #666;
   box-sizing: border-box;
 }
+
+/* foot end */
